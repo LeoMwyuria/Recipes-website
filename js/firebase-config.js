@@ -1,3 +1,4 @@
+// Initialize Firebase with the provided configuration
 const firebaseConfig = {
       apiKey: "AIzaSyBOxxp0ooghuyRsiUkAVfjqG1Jg6Usy8UM",
       authDomain: "receipts-website.firebaseapp.com",
@@ -8,7 +9,7 @@ const firebaseConfig = {
       measurementId: "G-DJ72ZVRKQ4"
     };
 firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
+const auth = firebase.auth(); // Get Firebase Authentication service
 
 
 window.auth = auth;
